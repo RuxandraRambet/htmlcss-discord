@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
   
   /* Common */
 
@@ -19,6 +22,9 @@
   .container {
     max-width: 1200px;
     margin: 0 auto;
+  }
+  .logo img {
+    width: 100px;
   }
   .row, 
   .row-big{
@@ -35,7 +41,13 @@
     padding: 45px;
     line-height: 25px;
   }
-
+  .language, .icon {
+    color: white;
+  }
+  .colored {
+    color: white;
+    background-color: #7289da;
+  }
 /* Header */
 
   header {
@@ -48,7 +60,7 @@
     padding: 15px;
     justify-content: space-between;
   }
-  header .header-logo,
+  header .logo,
   header .header-login {
     width: 20%;
     vertical-align: middle;
@@ -60,9 +72,7 @@
   header .header-login{
     text-align: right;
   }
-  header .header-logo img {
-    width: 100px;
-  }
+ 
   header .header-link a{
     color: #fbfffe;
     text-decoration: none;
@@ -114,17 +124,71 @@
     text-align: center;
     line-height: 25px;
   }
-  #colored {
-    color: white;
-    background-color: #7289da;
+  #special {
     margin-top: 50px;
   }
+
   main section:nth-child(even) {
     background-color: #d3d3d3;
   }
 
   /* Footer */
-  
+  footer {
+    padding-top: 70px;
+    background-color: #23272a;;
+  }
+ 
+  footer .footer-top .col1 {
+    width: 30%;
+  }
+  footer .footer-top  h2, .branch{
+    color:  #7289da;
+  }
+  footer .footer-top .col1 .language img{
+    width: 30px;
+    vertical-align: middle;
+  }
+  footer .footer-top .col1 .language {
+    vertical-align: middle;
+    padding-bottom: 20px;
+  }
+  footer .footer-top .col1 .icon {
+    display: inline-block;
+  }
+  .icon .space-insta {
+    padding: 0 20px;
+  }
+  .icon .space-facebook {
+    padding-right: 20px;
+  }
+  footer .footer-top .col2 {
+    width: 70%;
+    display: flex;
+    color: white;
+  }
+  footer .footer-top .col2 .col {
+    flex-grow: 1;
+  }
+  footer .footer-top .row {
+    padding-bottom: 40px;
+    border-bottom: 2px solid #4f5d8c;
+}
+footer .col2 ul {
+    list-style: none;
+}
+footer .col2 ul li{
+    padding: 10px 0;
+}
+footer .footer-bottom .row {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+footer .footer-bottom {
+    padding-bottom: 50px;
+}
+
+
   
     
   
