@@ -6,6 +6,7 @@
     box-sizing: border-box;
   }
   body {
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -13,11 +14,12 @@
 
  .btn {
     all:unset;
-    padding: 10px;
-    border-radius: 50px;
+    padding: 10px 15px;
+    border-radius: 20px;
     cursor: pointer;
     background-color: white;
     color: black;
+    display: inline-block;
   }
   .container {
     max-width: 1200px;
@@ -25,6 +27,7 @@
   }
   .logo img {
     width: 100px;
+    display: block;
   }
   .row, 
   .row-big{
@@ -59,11 +62,12 @@
     display: flex;
     padding: 15px;
     justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
   }
   header .logo,
   header .header-login {
     width: 20%;
-    vertical-align: middle;
   }
   header .header-link {
     width: 80%;
